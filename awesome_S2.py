@@ -1,11 +1,11 @@
 import os
 import pandas as pd
-import numpy as np
 
 # csvファイルからのダウンロード
 # 絶対パスを通すといい
 X = os.path.abspath("reserve.csv")
 reserve_tb = pd.read_csv(X, encoding="utf-8")
+print(reserve_tb)
 
 # 2-1 データ列による抽出
 # ①列名指定
